@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public Transform cameraTransform;
 
     private Vector3 velocity;
-    private float gravity = -0;
+    private float gravity = -9.81f;
     private bool isGrounded;
 
     void Start()
