@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BoneConstraintController : MonoBehaviour
 {
+    private Vector3 currentIKPos;
     // Start is called before the first frame update
     void Start()
     {
