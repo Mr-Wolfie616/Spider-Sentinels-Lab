@@ -7,8 +7,12 @@ public class BoneConstraintController : MonoBehaviour
     private Vector3 currentIKPos;
     private float currentStepDistance;
 
-    public float maxStepDistance = 2f;
+    public float maxStepDistance = 3f;
     public GameObject legAimPosition;
+
+    public BoneConstraintController OppositeLeg;
+    public bool LegIsMoving;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,16 +26,29 @@ public class BoneConstraintController : MonoBehaviour
         SetIKPosition();
     }
 
+    public bool CheckIsLegMoving()
+    {
+        return LegIsMoving;
+    }
+
     private void SetIKPosition()
     {
         currentStepDistance = Vector3.Distance(currentIKPos, legAimPosition.transform.position);
 
-        if (currentStepDistance > maxStepDistance)
+        bool canStep = currentStepDistance > maxStepDistance && (OppositeLeg == null || !OppositeLeg.CheckIsLegMoving());
+
+        if (canStep)
         {
-            currentIKPos = legAimPosition.transform.position;
+            LegIsMoving = true;
+
+            transform.position = legAimPosition.transform.position;
+            currentIKPos = transform.position;
+
+            LegIsMoving = false;
         }
         else
         {
+            LegIsMoving = false;
             transform.position = currentIKPos;
         }
     }

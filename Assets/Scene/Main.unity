@@ -1132,6 +1132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxStepDistance: 2
   legAimPosition: {fileID: 1011008624}
+  OppositeLeg: {fileID: 869060619}
+  LegIsMoving: 0
 --- !u!4 &841563253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4281361850770073009, guid: 6cc13b064f40fb24aae57dca14e8a328, type: 3}
@@ -1208,6 +1210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxStepDistance: 2
   legAimPosition: {fileID: 2088403067}
+  OppositeLeg: {fileID: 758043027}
+  LegIsMoving: 0
 --- !u!1 &894362565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,26 +1247,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Effectors:
-  - m_Transform: {fileID: 1857494483}
-    m_Style:
-      shape: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-      color: {r: 0, g: 1, b: 0.06552434, a: 0.5}
-      size: 1
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
-    m_Visible: 1
   - m_Transform: {fileID: 1800017476}
     m_Style:
       shape: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
       color: {r: 1, g: 0.8751614, b: 0, a: 0.5}
-      size: 1
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
-    m_Visible: 1
-  - m_Transform: {fileID: 869060617}
-    m_Style:
-      shape: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-      color: {r: 0, g: 0.23759937, b: 1, a: 0.5}
       size: 1
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
@@ -2186,6 +2174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxStepDistance: 2
   legAimPosition: {fileID: 660853517}
+  OppositeLeg: {fileID: 1857494485}
+  LegIsMoving: 0
 --- !u!4 &1828606022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7500350634137278275, guid: 6cc13b064f40fb24aae57dca14e8a328, type: 3}
@@ -2262,6 +2252,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxStepDistance: 2
   legAimPosition: {fileID: 84264112}
+  OppositeLeg: {fileID: 1800017478}
+  LegIsMoving: 0
 --- !u!4 &1921070614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5492083998308159127, guid: 6cc13b064f40fb24aae57dca14e8a328, type: 3}
