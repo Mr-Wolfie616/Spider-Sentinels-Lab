@@ -6,10 +6,8 @@ public class BoneConstraintController : MonoBehaviour
 {
     private Vector3 currentIKPos;
     private float currentStepDistance;
-
     public float maxStepDistance = 3f;
     public GameObject legAimPosition;
-
     public BoneConstraintController OppositeLeg;
     public bool LegIsMoving;
 
